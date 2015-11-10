@@ -1,0 +1,25 @@
+1B,First Base
+2B,Second Base
+SS,short Stop
+3B,Third Base
+RF,Right Field
+CF,Center Field
+LF,Left Field
+C,Catcher
+DH,Designated Hitter
+OF,Outfield
+UT,Utility
+OS,Outfield and short Stop
+3S,Third Base and short Stop
+13,First and Third Base
+3O,Third Base and Outfield
+O1,Outfield and First Base
+S3,short Stop and Third Base
+32,Third and Second Base
+DO,Designated Hitter and Outfield
+OD,Outfield and Designated Hitter
+CD,Catcher and Designated Hitter
+CS,Catcher and Short Stop
+23,Second and Third Base
+1O,First Base and Outfield
+2S,Second Base and Short Stop
