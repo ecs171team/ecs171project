@@ -85,8 +85,8 @@ end
 %%
 
 % scatterplot matrix
-gplotmatrix(data(:,1:14), [], group, 'bgr',[],[5,5,5],'on','hist',varNames(1:14));
-print('scatterplotMatrix','-dpng');
+% gplotmatrix(data(:,1:14), [], group, 'bgr',[],[5,5,5],'on','hist',varNames(1:14));
+% print('scatterplotMatrix','-dpng');
 
 %%
 %% Problem 3
@@ -98,8 +98,8 @@ print('scatterplotMatrix','-dpng');
 %% Problem 4
 %%
 
-[~,n] = size(data);
-for i = 1:(n-1)
+n = length(data(1,:));
+for i = 1:(n - 1)
     x1 = data(1:163,i);
     y1 = data(1:163,15);
     x2 = data(164:263,i);
