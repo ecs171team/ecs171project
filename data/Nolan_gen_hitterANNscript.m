@@ -8,7 +8,8 @@
 %   y - target data.
 
 data = readData();
-x = data.hitter.numData(:,1:end-1)';
+h_stat = data.hitter.numData(:,1:end-1);
+x = h_stat';
 h_salary = data.hitter.numData(:,end);
 t = h_salary';
 
@@ -17,7 +18,7 @@ t = h_salary';
 % 'trainlm' is usually fastest.
 % 'trainbr' takes longer but may be better for challenging problems.
 % 'trainscg' uses less memory. Suitable in low memory situations.
-trainFcn = 'trainlm';  % Levenberg-Marquardt backpropagation.
+trainFcn = 'trainbr';  % Levenberg-Marquardt backpropagation.
 
 % Create a Fitting Network
 hiddenLayerSize = 10;
