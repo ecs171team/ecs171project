@@ -20,11 +20,15 @@ raw(I,:) = [];
 
 %% Create output variable
 Baseballhittersdata = reshape([raw{:}],size(raw));
-X = Baseballhittersdata(:,2:end-1);
+X = Baseballhittersdata(:,1:end-1);
 Y = Baseballhittersdata(:,end);
 
 %normalize stats
-X_norm = normc(X);
+X(:,1) =  Baseballhittersdata(:,1)/max(Baseballhittersdata(:,1));
+for i = 5:9
+    X(:,i) =  Baseballhittersdata(:,i)/max(Baseballhittersdata(:,i));
+end
 
+X(:,end) =  Baseballhittersdata(:,end-1)/max(Baseballhittersdata(:,end-1));
 %% Clear temporary variables
 clearvars raw I;
